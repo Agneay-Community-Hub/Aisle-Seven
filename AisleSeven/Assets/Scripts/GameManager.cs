@@ -94,6 +94,7 @@ public class GameManager : MonoBehaviour
     // ------------------------------------------------------------------ main loop
     void Update()
     {
+        if (TrailerDirector.Active) return;
         float udt = Time.unscaledDeltaTime;
         fade = Mathf.MoveTowards(fade, fadeTarget, udt * 1.2f);
         redFlash = Mathf.MoveTowards(redFlash, 0f, udt * 1.5f);

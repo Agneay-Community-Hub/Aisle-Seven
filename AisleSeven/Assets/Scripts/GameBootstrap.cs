@@ -41,6 +41,7 @@ public class GameBootstrap : MonoBehaviour
         {
             if (args[i] == "-autoshot") StartCoroutine(AutoShot(args[i + 1]));
             if (args[i] == "-autoplay") StartCoroutine(AutoPlay(args[i + 1]));
+            if (args[i] == "-trailer") gameObject.AddComponent<TrailerDirector>().Begin(args[i + 1]);
         }
     }
 

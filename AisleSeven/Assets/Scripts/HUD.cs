@@ -86,6 +86,13 @@ public class HUD : MonoBehaviour
         GUI.DrawTextureWithTexCoords(new Rect(0, 0, W, H), noise, new Rect(Random.value, Random.value, W / (256f * sc), H / (256f * sc)));
         GUI.color = Color.white;
 
+        if (TrailerDirector.Active)
+        {
+            if (gm.HandbookOpen) Handbook(gm, W, H);
+            if (gm.redFlash > 0) Box(new Rect(0, 0, W, H), new Color(0.6f, 0f, 0f, gm.redFlash * 0.45f));
+            return;
+        }
+
         switch (gm.state)
         {
             case GState.Title: Title(W, H); break;
@@ -248,7 +255,7 @@ public class HUD : MonoBehaviour
             GUI.Label(new Rect(r.x + S(50), y, r.width - S(100), h), t, sPaper);
             y += h + S(10);
         }
-        GUI.Label(new Rect(r.x, r.yMax - S(56), r.width, S(40)), "[TAB] close", sPaperTitle);
+        if (!TrailerDirector.Active) GUI.Label(new Rect(r.x, r.yMax - S(56), r.width, S(40)), "[TAB] close", sPaperTitle);
     }
 
     void Ending(GameManager gm, float W, float H)

@@ -141,6 +141,22 @@ public static class CustomerFactory
         s.payment = Pick(BadPay); s.payValid = false; s.lines.Add(Pick(OddLines)); return s;
     }
 
+    /// Fixed-looking customers for the trailer.
+    public static CustomerSpec TrailerSpec(string kind)
+    {
+        Random.InitState(kind.GetHashCode());
+        var s = Base();
+        s.items.Add(Stock[0]);
+        switch (kind)
+        {
+            case "eyes": s.eyes = 5; s.shirt = new Color(0.35f, 0.22f, 0.2f); s.skin = Skins[1]; break;
+            case "faceless": s.faceless = true; s.eyes = 0; s.shirt = new Color(0.2f, 0.22f, 0.3f); s.height = 1.06f; break;
+            case "uniform": s.uniform = true; s.skin = Skins[1]; s.shirt = new Color(0.3f, 0.3f, 0.32f); break;
+            default: s.shirt = new Color(0.25f, 0.4f, 0.3f); s.skin = Skins[3]; break;
+        }
+        return s;
+    }
+
     public static CustomerSpec DayShift()
     {
         var s = Base();

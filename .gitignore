@@ -15,5 +15,8 @@ AisleSeven/.vs/
 Builds/
 *.log
 
+# Trailer video is too large for git (upload to YouTube / release assets instead)
+Trailer/*.mp4
+
 # Local tooling
 .claude/

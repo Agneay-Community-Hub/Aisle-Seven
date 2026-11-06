@@ -169,6 +169,8 @@ public class Aisle7 : MonoBehaviour
         foreach (var m in fixtures) m.SetColor("_EmissionColor", on ? FixtureCol * 1.3f : Color.black);
     }
 
+    public void SetLightsDirect(bool on) { if (on != LightsOn) SetLights(on); }
+
     public void ForceBlackout(float d)
     {
         blackoutT = Mathf.Max(blackoutT, d);

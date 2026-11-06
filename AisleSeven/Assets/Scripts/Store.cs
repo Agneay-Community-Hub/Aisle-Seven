@@ -343,6 +343,9 @@ public class Store : MonoBehaviour
         figT = 14f; figSeen = 0f;
     }
 
+    public void ShowFigureFor(float x) { if (!figure.gameObject.activeSelf) DebugFigureAt(x); }
+    public void HideFigure() { figure.gameObject.SetActive(false); }
+
     public void DebugFigureAt(float x) { figure.localPosition = new Vector3(x, 0, -0.75f); figure.gameObject.SetActive(true); figT = 30f; figSeen = -99f; }
 
     void UpdateFigure(float dt)
