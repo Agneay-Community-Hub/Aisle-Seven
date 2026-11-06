@@ -1,0 +1,4 @@
+<linker>
+  <!-- GameObject.CreatePrimitive adds colliders by type at runtime; keep them from being stripped. -->
+  <assembly fullname="UnityEngine.PhysicsModule" preserve="all" />
+</linker>

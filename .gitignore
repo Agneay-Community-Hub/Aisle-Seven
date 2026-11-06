@@ -1,0 +1,19 @@
+# Unity generated
+AisleSeven/[Ll]ibrary/
+AisleSeven/[Tt]emp/
+AisleSeven/[Oo]bj/
+AisleSeven/[Ll]ogs/
+AisleSeven/[Uu]ser[Ss]ettings/
+AisleSeven/*.csproj
+AisleSeven/*.sln
+AisleSeven/.vs/
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Build output (upload builds to itch.io, not git)
+Builds/
+*.log
+
+# Local tooling
+.claude/
