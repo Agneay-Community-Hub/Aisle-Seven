@@ -4,7 +4,30 @@
 
 Made for **[GitHub Game Off 2026](https://itch.io/jam/game-off-2026)**. Theme: **SHIFT**.
 
-![Aisle seven](docs/screenshots/06_toward_aisle7.png)
+[![Download for Windows](https://img.shields.io/badge/Download-Windows%2064--bit-2ea44f?logo=windows&logoColor=white)](https://github.com/Agneay-Community-Hub/Aisle-Seven/releases/latest/download/AisleSeven-Windows.zip)
+[![Latest release](https://img.shields.io/github/v/release/Agneay-Community-Hub/Aisle-Seven?label=release)](https://github.com/Agneay-Community-Hub/Aisle-Seven/releases/latest)
+[![Watch the trailer](https://img.shields.io/badge/Watch-Trailer-red?logo=youtube&logoColor=white)](https://github.com/Agneay-Community-Hub/Aisle-Seven/releases/download/v1.0.0/AisleSeven_Trailer_1080p.mp4)
+
+## Trailer
+
+[![Aisle Seven trailer: click to watch in 1080p](docs/trailer-thumbnail.jpg)](https://github.com/Agneay-Community-Hub/Aisle-Seven/releases/download/v1.0.0/AisleSeven_Trailer_1080p.mp4)
+
+*Click the image to watch the full trailer (1080p, 1:06).*
+
+![It only moves when it isn't seen](docs/trailer-preview.gif)
+
+## Download & play
+
+**Windows:** download **[AisleSeven-Windows.zip](https://github.com/Agneay-Community-Hub/Aisle-Seven/releases/latest/download/AisleSeven-Windows.zip)** from the [latest release](https://github.com/Agneay-Community-Hub/Aisle-Seven/releases/latest), extract the whole folder, and run `AisleSeven.exe`. Keep `AisleSeven_Data` next to the exe. The build isn't signed, so Windows may show a SmartScreen warning: click **More info → Run anyway**.
+
+**Browser:** play on itch.io (link coming soon).
+
+## Screenshots
+
+| | |
+|---|---|
+| ![Aisle seven](docs/screenshots/06_toward_aisle7.png) | ![A customer with too many eyes](docs/screenshots/04_customer.png) |
+| ![The handbook](docs/screenshots/05_handbook.png) | ![Someone at the window](docs/screenshots/10_window.png) |
 
 ## How it plays
 
